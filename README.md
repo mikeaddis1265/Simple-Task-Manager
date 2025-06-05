@@ -4,19 +4,21 @@ A simple REST API for managing tasks.
 
 ## Features
 - **GET /api/tasks**: Retrieve all tasks.
-- **POST /api/tasks**: Add a new task (requires `{ "title": "task title" }` in the body).
+- **POST /api/tasks**: Add a new task (requires `{ "title": "task title" }` in the request body).
 - **PUT /api/tasks/:id**: Mark a task as completed.
 - **DELETE /api/tasks/:id**: Delete a task.
 - Input validation: Task title must not be empty.
-- Data persistence using a JSON file (`tasks.json`).
+- Data persistence: Tasks are stored in a `tasks.json` file for persistence between server restarts.
+- Simple UI: A styled "API is running" page is served at the root URL (`/`).
 
 ## Tech Stack
-- Node.js
-- Express.js
-- Tailwind CSS (for the "API is running" page)
+- **Node.js**: JavaScript runtime for the server.
+- **Express.js**: Web framework for building the REST API.
+- **Tailwind CSS**: Used for styling the "API is running" page.
+- **JSON**: File-based storage for tasks (`tasks.json`).
 
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone <your-repo-url>
-   cd backend
+   git repo
+   cd Simple-Task-Manager
