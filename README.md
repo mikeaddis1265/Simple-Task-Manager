@@ -1,6 +1,6 @@
 # Task Manager Backend API
 
-A simple REST API for managing tasks, built for the Internship Entrance Challenge.
+A simple REST API for managing tasks.
 
 ## Features
 - **GET /api/tasks**: Retrieve all tasks.
